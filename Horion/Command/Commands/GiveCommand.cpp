@@ -33,7 +33,7 @@ bool GiveCommand::execute(std::vector<std::string> *args) {
 	for (unsigned int i = 0; i < stackCount; i++) {
 		//clientMessageF("%sDEBUG:%s Giving stack %d of items!", RED, GREEN, i + 1);
 		std::string tag;
-		bool success = false;
+		bool success = true;
 
 		if (args->size() > 4) {
 			std::string tag = Utils::getClipboardText();
